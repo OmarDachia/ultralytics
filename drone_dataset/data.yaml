@@ -1,0 +1,6 @@
+names:
+- drone
+nc: 1
+path: C:/Users/Dachia/Documents/ultralytics/drone_dataset/
+train: C:/Users/Dachia/Documents/ultralytics/drone_dataset/train
+val: C:/Users/Dachia/Documents/ultralytics/drone_dataset/valid
