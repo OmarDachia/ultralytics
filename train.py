@@ -14,12 +14,19 @@ from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
 
 # Train the model on your custom dataset
+# results = model.train(
+#     data=r"C:\Users\Dachia\Documents\ultralytics\drone_dataset\data.yaml",
+#     epochs=50,
+#     imgsz=640,
+#     name="drone"
+# )
+
 results = model.train(
     data=r"C:\Users\Dachia\Documents\ultralytics\drone_dataset\data.yaml",
-    epochs=50,
-    imgsz=640,
-    batch=16,
-    name="drone"
+    epochs=100,
+    imgsz=960,        
+    batch=8,          
+    name="drone_img960"
 )
 
 # Print where results are saved
